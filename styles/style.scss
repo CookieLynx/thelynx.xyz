@@ -1,0 +1,44 @@
+$bg-color: white;
+$text-color: purple;
+$font-stack: Arial, sans-serif;
+$bg-image: url('/Protolynx.png');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: $bg-image;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+  font-family: $font-stack;
+  margin: 2rem;
+  background-color: $bg-color;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: $text-color;
+  text-shadow: 2px 2px 4px #000;
+  font-family: Tahoma;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  a {
+    margin-right: 1rem;
+    text-decoration: none;
+    color: $text-color;
+    text-shadow: 2px 2px 4px #000;
+    font-family: Tahoma;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+h1 {
+  font-size: 6em;
+}
+
+
