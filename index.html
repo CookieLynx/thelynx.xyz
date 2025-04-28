@@ -1,14 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Check Back Soon!</title>
+  <script src="https://kit.fontawesome.com/c04d7f06ec.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <title>RedLynxLegacy</title>
   <link rel="stylesheet" href="styles/style.css" />
 </head>
 <body>
-
-  <h1>Check back soon! -Cookie</h1>
-
+  <header class="header">
+    <h1><span class="red">Red</span>LynxLegacy</h1>
+    
+    <div class="social-icons-header">
+      <a href="https://twitter.com/redlynxlegacy" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://bsky.app/profile/thelynx.xyz" target="_blank"><i class="fa fa-brands fa-bluesky"></i></a>
+      <a href="https://github.com/CookieLynx/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linktr.ee/redlynxlegacy" target="_blank"><i class="fa fa-solid fa-tree"></i></a>
+    </div>
+    
+    <h2 class="subheader" id="subheaderWriter"></h2>
+    <div class="header-buttons">
+      <button class="header-button" onclick="homeButtonClicked()" id="button1">Home</button>
+      <button class="header-button" onclick="projectButtonClicked()" id="button2">Projects</button>
+      <button class="header-button" onclick="softwareButtonClicked()" id="button3">Software</button>
+      <button class="header-button" onclick="filesButtonClicked()" id="button3">Files</button>
+    </div>
+  </header>
+  <div class="content">
+    <div class="content-text">
+      <h1><span class="bodyHeader">Welcome to this Silly Lynx's Website!</h1></span>
+      <p>Here you'll find Protogens, Electronics, Software, and Plenty else!</p>
+      <p>Feel free to explore and learn more about me and my projects.</p>
+      <h1><span class="bodyHeader">About Me</h1></span>
+      <p>I am currently in school for Computer Science but randomly dabble in electronics projects (Like my ProtoLynx), PCB designing, 3D modeling, robotics, and other software related projects.</p>
+      <p>You may have seen my ProtoLynx fursuit head at Vancoufur 2025!</p>
+      <img src="assets/ProtoLynxFursuit.jpg" alt="ProtoLynx Fursuit!" width="800" height="1200">
+      <video width="360" height="640" controls>
+        <source src="assets/ProtoLynxFursuitVideo.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+      </video>
+      <h1><span class="bodyHeader">Contact</h1></span>
+      <p>The best way to contact me is through my Bluesky:</p>
+      <div class="standard-buttons"></div>
+        <a href="https://bsky.app/profile/thelynx.xyz" target="_blank"><i class="fa fa-brands fa-bluesky"></i></a>
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <h1><span class="red">Red</span>LynxLegacy</h1>
+    <div class="social-icons-footer">
+      <a href="https://twitter.com/redlynxlegacy" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://bsky.app/profile/thelynx.xyz" target="_blank"><i class="fa fa-brands fa-bluesky"></i></a>
+      <a href="https://github.com/CookieLynx/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linktr.ee/redlynxlegacy" target="_blank"><i class="fa fa-solid fa-tree"></i></a>
+    </div>
+  </footer>
 </body>
+<script src="js/typer.js"></script>
+<script src="js/buttons.js"></script>
 </html>
