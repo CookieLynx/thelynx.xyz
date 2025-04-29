@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/c04d7f06ec.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <title>Projects</title>
+  <link rel="stylesheet" href="styles/style.css" />
+  <meta property="og:title" content="TheLynx.xyz - UnityPeek" />
+  <meta property="og:description" content="Tool to View Built Unity Game Hierachy and Inspector views using a BepInEx Plugin - Unity Peek" />
+  <meta property="og:image" content="https://thelynx.xyz/assets/unitypeek/UnityPeekLogo.png" />
+  <meta property="og:url" content="https://thelynx.xyz/unitypeek" />
+  <meta property="og:type" content="website" />
+  
+  <!-- (optional) Twitter Card for better compatibility -->
+  <meta name="twitter:card" content="summary_large_image" />
+</head>
+<body>
+  <header class="header">
+    <h1><span class="red">Red</span>LynxLegacy</h1>
+    
+    <div class="social-icons-header">
+      <a href="https://twitter.com/redlynxlegacy" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://bsky.app/profile/thelynx.xyz" target="_blank"><i class="fa fa-brands fa-bluesky"></i></a>
+      <a href="https://github.com/CookieLynx/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linktr.ee/redlynxlegacy" target="_blank"><i class="fa fa-solid fa-tree"></i></a>
+    </div>
+    
+    <h2 class="subheader" id="subheaderWriter"></h2>
+    <div class="header-buttons">
+      <button class="header-button" onclick="homeButtonClicked()" id="button1">Home</button>
+      <button class="header-button" onclick="projectButtonClicked()" id="button2">Projects</button>
+      <button class="header-button" onclick="softwareButtonClicked()" id="button3">Software</button>
+      <button class="header-button" onclick="filesButtonClicked()" id="button3">Files</button>
+    </div>
+  </header>
+  <h1><span class="bodyHeader">Unity Peek</h1></span>
+  <div class="unitypeekbody">
+    <div class="project-page">
+        <div class="project-gallery">
+          <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+          <img id="slideImage" src="/assets/unitypeek/MainsSreen.png" alt="Project Screenshot">
+          <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+      
+        <div class="project-details">
+          <h2>About Unity Peek</h2>
+          <p>Unity Peek is a tool that allows you to view the built hierarchy and inspector views of Unity games using the UnityPeekPlugin BepInEx plugin and the UnityPeek software. It provides a convenient way to inspect and interact with the game objects and components in real-time.</p>
+          <p>With Unity Peek, you can easily explore the structure of Unity games, view their properties, and make modifications on the fly. This can be particularly useful for debugging, testing, or simply gaining insights into how the game is built.</p>
+          <p>Unity Peek currently works with most Unity versions but requires the game to be built with Mono and not IL2CPP since it requires a BepInEx plugin to also be installed in the targeted game. Comunication to the plugin and the software is through a configurable local ip address using a socket.</p>
+          <p>Unity Peek is currently in development by me and currently can only veiw the hierachy of the game and transform data of each object but the ability to change transform values, see other components and much more is coming soon. For more details please checkout the Github linked below where you can find installation instructions, build instructions and more info!</p>
+          <h2>Features</h2>
+          <ul>
+            <li>View full GameObject Hierarchy</li>
+            <li>View of Transform Data</li>
+            <li>Compatible with most Unity builds</li>
+            <li>Built using BepInEx 6.0.0 plugin system and Avalonia</li>
+          </ul>
+      
+          <div class="project-buttons">
+            <a href="https://github.com/CookieLynx/UnityPeek" class="button">View on GitHub</a>
+          </div>
+        </div>
+      </div>
+    <p></p>
+    
+
+  </div>
+  <footer class="footer">
+    <h1><span class="red">Red</span>LynxLegacy</h1>
+    <div class="social-icons-footer">
+      <a href="https://twitter.com/redlynxlegacy" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://bsky.app/profile/thelynx.xyz" target="_blank"><i class="fa fa-brands fa-bluesky"></i></a>
+      <a href="https://github.com/CookieLynx/" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linktr.ee/redlynxlegacy" target="_blank"><i class="fa fa-solid fa-tree"></i></a>
+    </div>
+  </footer>
+</body>
+<script src="js/typer.js"></script>
+<script src="js/buttons.js"></script>
+<script>
+    const slides = [
+      '/assets/unitypeek/MainsSreen.png',
+      '/assets/unitypeek/Screen2.png',
+      '/assets/unitypeek/Screen3.png'
+    ];
+    let currentSlide = 0;
+    
+    function changeSlide(direction) {
+      currentSlide += direction;
+      if (currentSlide < 0) currentSlide = slides.length - 1;
+      if (currentSlide >= slides.length) currentSlide = 0;
+      document.getElementById('slideImage').src = slides[currentSlide];
+    }
+    </script>
+</html>
+
+
