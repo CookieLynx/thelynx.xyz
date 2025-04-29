@@ -282,7 +282,6 @@ h1 {
 .project-gallery {
   position: relative;
   width: 100%;
-  max-width: 700px;
   height: auto;
 }
 
@@ -302,7 +301,6 @@ h1 {
   color: white;
   font-size: 24px;
   cursor: pointer;
-  border-radius: 50%;
 }
 
 .project-gallery .prev {
